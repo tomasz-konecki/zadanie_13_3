@@ -29,7 +29,7 @@ process.stdin.on('readable', () => {
                 switch (instruction) {
                     case '/exit':
                         process.stdout.write('Quitting app!\n\n');
-                        process.exit()
+                        process.exit();
                     default:
                         process.stderr.write('\nWrong instruction!\n\n');
                 }
